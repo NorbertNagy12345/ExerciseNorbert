@@ -13,12 +13,12 @@ public class ExerciseNorbert {
         oddNumbers(inArr);
         System.out.println("Summ of all numbers: " + sumAll);
         int[] biggerNumbers = compareNumbers(compNum, inArr);
-        System.out.println("Numbers that are bigger "+Arrays.toString(biggerNumbers));
+        System.out.println("Numbers that are bigger " + Arrays.toString(biggerNumbers));
         System.out.println("Donation target: ");
         int donation = scanner.nextInt();
         System.out.println("Maximum number of donations: ");
-        int maxNumOfDonation=scanner.nextInt();
-        donation(donation,maxNumOfDonation);
+        int maxNumOfDonation = scanner.nextInt();
+        donation(donation, maxNumOfDonation);
         System.out.println("Pleas introduce a multiple string that are joined with a \".\": ");
         String longstring = scanner.next();
         stringChopper(longstring);
@@ -34,7 +34,7 @@ public class ExerciseNorbert {
     private static void donation(int donation, int maxNumOfDonation) {
         int sumdonation = 0;
         Random rand = new Random();
-        for(int i=0;i<=maxNumOfDonation || sumdonation<donation;i++){
+        for (int i = 0;sumdonation < donation && i <= maxNumOfDonation; i++) {
             sumdonation += rand.nextInt(donation);
             System.out.println(sumdonation);
         }
