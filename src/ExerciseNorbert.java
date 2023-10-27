@@ -7,7 +7,7 @@ public class ExerciseNorbert {
         System.out.println("Pleas introduce the number of numbers you want to be summed: ");
         int size = scanner.nextInt();
         int[] inArr = arrOfNum(size, scanner);
-        System.out.println("pleas introduce a number to compare with: ");
+        System.out.println("Pleas introduce a number to compare with: ");
         int compNum = scanner.nextInt();
         int sumAll = sumArr(inArr);
         oddNumbers(inArr);
