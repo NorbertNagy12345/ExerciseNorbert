@@ -34,7 +34,7 @@ public class ExerciseNorbert {
     private static void donation(int donation, int maxNumOfDonation) {
         int sumdonation = 0;
         Random rand = new Random();
-        for (int i = 0;sumdonation < donation && i <= maxNumOfDonation; i++) {
+        for (int i = 0; sumdonation < donation && i <= maxNumOfDonation; i++) {
             sumdonation += rand.nextInt(donation);
             System.out.println(sumdonation);
         }
