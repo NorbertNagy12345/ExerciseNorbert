@@ -36,7 +36,12 @@ public class ExerciseNorbert {
         Random rand = new Random();
         for (int i = 0; sumdonation < donation && i <= maxNumOfDonation; i++) {
             sumdonation += rand.nextInt(donation);
-            System.out.println(sumdonation);
+            if (sumdonation > donation) {
+                System.out.println(donation);
+
+            } else {
+                System.out.println(sumdonation);
+            }
         }
     }
 
